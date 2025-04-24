@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Студия красоты "Елена"{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'main/css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/gallery.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/price.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/nicepage.css' %}">
+
+    <!-- Подключение Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{% url 'home' %}">Главная</a>
+            <a href="{% url 'gallery' %}">Галерея</a>
+            <a href="{% url 'price' %}">Прайс</a>
+            <a href="{% url 'article_list' %}">Блог</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Студия красоты "Елена"</p>
+    </footer>
+
+    <script src="{% static 'main/js/scripts.js' %}"></script>
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

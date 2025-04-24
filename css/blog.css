@@ -1,0 +1,54 @@
+/* blog.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.articles-list {
+    margin-top: 20px;
+}
+
+.article {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.article h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.article .date {
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.article p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.article-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
