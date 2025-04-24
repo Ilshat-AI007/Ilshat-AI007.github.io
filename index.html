@@ -1,4 +1,4 @@
-{% load static %}
+
 <!DOCTYPE html>
 <html style="font-size: 16px;" lang="ru">
 <head>
@@ -7,10 +7,10 @@
     <meta name="keywords" content="О нас, Добро пожаловать в салон, Красота и Здоровье, Спа-процедуры, О нас, Наши услуги, Как это работает, Наслаждайтесь путешествием по здоровью вместе, Посетите нас или позвоните нам сегодня">
     <meta name="description" content="">
     <title>О нас</title>
-    <link rel="stylesheet" href="{% static 'main/css/nicepage.css' %}" media="screen">
-    <link rel="stylesheet" href="{% static 'main/css/home.css' %}" media="screen">
-    <script class="u-script" type="text/javascript" src="{% static 'main/js/jquery.js' %}" defer=""></script>
-    <script class="u-script" type="text/javascript" src="{% static 'main/js/nicepage.js' %}" defer=""></script>
+    <link rel="stylesheet" href="/css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="/css/home.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/js/nicepage.js" defer=""></script>
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
     <meta name="theme-color" content="#e5caba">
@@ -32,10 +32,10 @@
                 </div>
                 <div class="u-nav-container">
                     <ul class="u-nav u-unstyled u-nav-1">
-                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base u-text-palette-2-dark-2" href="{% url 'home' %}" style="padding: 10px 20px;">О нас</a></li>
-                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base u-text-palette-2-dark-2" href="{% url 'gallery' %}" style="padding: 10px 20px;">Фотогалерея работ</a></li>
-                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base u-text-palette-2-dark-2" href="{% url 'price' %}" style="padding: 10px 20px;">Прайс</a></li>
-                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base u-text-palette-2-dark-2" href="{% url 'article_list' %}" style="padding: 10px 20px;">Блог</a></li>
+                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base u-text-palette-2-dark-2" href="{% url 'home" style="padding: 10px 20px;">О нас</a></li>
+                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base u-text-palette-2-dark-2" href="{% url 'gallery" style="padding: 10px 20px;">Фотогалерея работ</a></li>
+                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base u-text-palette-2-dark-2" href="{% url 'price" style="padding: 10px 20px;">Прайс</a></li>
+                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base u-text-palette-2-dark-2" href="{% url 'article_list" style="padding: 10px 20px;">Блог</a></li>
                     </ul>
                 </div>
             </nav>
@@ -55,7 +55,7 @@
                             <blockquote class="u-text u-text-4" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">Мы работаем для Вас более 20 лет</blockquote>
                         </div>
                     </div>
-                    <img class="u-hover-feature u-image u-image-round u-radius u-image-1" src="{% static 'main/images/photo_2024-12-17_23-40-30.jpg' %}" alt="" data-image-width="749" data-image-height="994">
+                    <img class="u-hover-feature u-image u-image-round u-radius u-image-1" src="main/images/photo_2024-12-17_23-40-30.jpg" alt="" data-image-width="749" data-image-height="994">
                 </div>
             </div>
             <a href="#" class="u-active-black u-align-center u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-active-white u-text-body-color u-text-hover-white u-btn-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">студия красоты "ЕЛЕНА"</a>
@@ -74,13 +74,13 @@
                                 <div class="u-palette-1-base u-shape u-shape-rectangle u-shape-2"></div>
                                 <p class="u-align-left u-text u-text-body-color u-text-2">Миссия и ценности</p>
                                 <p class="u-align-center u-text u-text-body-color u-text-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">Мы экономим ваше время, выполняя свою работу быстро, качественно и профессионально. Мастера студии всегда рады постоянным клиентам и радушно принимают тех, кто впервые пришел к нам в гости.</p>
-                                <img class="custom-expanded u-hover-feature u-image u-image-round u-radius u-image-1" src="{% static 'main/images/86308C50-6DEB-4243-983B-31EE2881AF01.jpeg' %}" data-image-width="1600" data-image-height="1200">
+                                <img class="custom-expanded u-hover-feature u-image u-image-round u-radius u-image-1" src="main/images/86308C50-6DEB-4243-983B-31EE2881AF01.jpeg" data-image-width="1600" data-image-height="1200">
                             </div>
                         </div>
                         <div class="u-align-right u-container-style u-layout-cell u-size-32 u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-delay="0" data-animation-direction="">
                             <div class="u-container-layout u-valign-top u-container-layout-2">
-                                <img class="u-image u-image-round u-radius u-image-2" src="{% static 'main/images/2image.jpg' %}" alt="" data-image-width="1234" data-image-height="1645">
-                                <img class="u-image u-image-round u-radius u-image-3" src="{% static 'main/images/4image.jpg' %}" alt="" data-image-width="1368" data-image-height="1824">
+                                <img class="u-image u-image-round u-radius u-image-2" src="main/images/2image.jpg" alt="" data-image-width="1234" data-image-height="1645">
+                                <img class="u-image u-image-round u-radius u-image-3" src="main/images/4image.jpg" alt="" data-image-width="1368" data-image-height="1824">
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                     <div class="u-layout-row">
                         <div class="u-align-center u-container-align-center u-container-align-center-lg u-container-align-center-xl u-container-style u-layout-cell u-left-cell u-size-30-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-size-xs-60 u-white u-layout-cell-1" src="" data-animation-name="customAnimationIn" data-animation-duration="1500">
                             <div class="u-container-layout u-valign-middle-lg u-valign-middle-xl u-valign-top-sm u-valign-top-xs u-container-layout-1" src="">
-                                <img class="u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-preserve-proportions u-image-1" src="{% static 'main/images/image.png' %}" alt="" data-image-width="768" data-image-height="768">
+                                <img class="u-expanded-width-sm u-expanded-width-xs u-image u-image-default u-preserve-proportions u-image-1" src="main/images/image.png" alt="" data-image-width="768" data-image-height="768">
                             </div>
                         </div>
                         <div class="u-align-left u-container-align-left u-container-align-left-lg u-container-align-left-xl u-container-style u-layout-cell u-right-cell u-size-30-lg u-size-30-xl u-size-60-md u-size-60-sm u-size-60-xs u-size-xs-60 u-white u-layout-cell-2" data-animation-name="customAnimationIn" data-animation-duration="5000" data-animation-delay="1000">
@@ -125,7 +125,7 @@
             <div class="u-repeater u-repeater-1">
                 <div class="u-container-style u-list-item u-repeater-item">
                     <div class="u-container-layout u-similar-container u-valign-bottom-xs u-container-layout-2">
-                        <img src="{% static 'main/images/photo_2024-12-18_00-01-02.jpg' %}" alt="" class="custom-expanded u-hover-feature u-image u-image-round u-radius u-image-1" data-image-width="749" data-image-height="587" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                        <img src="/images/photo_2024-12-18_00-01-02.jpg" alt="" class="custom-expanded u-hover-feature u-image u-image-round u-radius u-image-1" data-image-width="749" data-image-height="587" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
                         <div class="u-align-left u-container-align-left u-container-align-left-lg u-container-align-left-md u-container-align-left-xl u-container-style u-group u-white u-group-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
                             <div class="u-container-layout u-container-layout-3">
                                 <h4 class="u-align-center-sm u-align-center-xs u-text u-text-2">Здесь каждая деталь будет подчеркивать женскую уникальность и очарование</h4>
@@ -135,7 +135,7 @@
                 </div>
                 <div class="u-container-style u-list-item u-repeater-item">
                     <div class="u-container-layout u-similar-container u-valign-bottom-xs u-container-layout-4">
-                        <img src="{% static 'main/images/photo_2024-12-18_00-00-56.jpg' %}" alt="" class="custom-expanded u-hover-feature u-image u-image-round u-radius u-image-2" data-image-width="749" data-image-height="1005" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                        <img src="main/images/photo_2024-12-18_00-00-56.jpg" alt="" class="custom-expanded u-hover-feature u-image u-image-round u-radius u-image-2" data-image-width="749" data-image-height="1005" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
                         <div class="u-align-left u-container-align-left u-container-align-left-lg u-container-align-left-md u-container-align-left-sm u-container-align-left-xl u-container-style u-group u-white u-group-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
                             <div class="u-container-layout u-container-layout-5">
                                 <h4 class="u-align-center-sm u-align-center-xs u-text u-text-3">Сила и уверенность начинаются с комфортного подхода</h4>
@@ -145,7 +145,7 @@
                 </div>
                 <div class="u-container-style u-list-item u-repeater-item">
                                         <div class="u-container-layout u-similar-container u-valign-bottom-xs u-container-layout-6">
-                        <img src="{% static 'main/images/image3.png' %}" alt="" class="custom-expanded u-hover-feature u-image u-image-round u-radius u-image-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750" data-image-width="768" data-image-height="768">
+                        <img src="main/images/image3.png" alt="" class="custom-expanded u-hover-feature u-image u-image-round u-radius u-image-3" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750" data-image-width="768" data-image-height="768">
                         <div class="u-align-left u-container-align-left u-container-align-left-lg u-container-align-left-md u-container-align-left-sm u-container-align-left-xl u-container-style u-group u-white u-group-4" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">
                             <div class="u-container-layout u-container-layout-7">
                                 <h4 class="u-align-center-sm u-align-center-xs u-text u-text-4">Мы знаем толк в женской красоте</h4>
@@ -155,7 +155,7 @@
                 </div>
                 <div class="u-container-style u-list-item u-repeater-item">
                     <div class="u-container-layout u-similar-container u-valign-bottom-xs u-container-layout-8">
-                        <img src="{% static 'main/images/image2.png' %}" alt="" class="custom-expanded u-hover-feature u-image u-image-round u-radius u-image-4" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750" data-image-width="768" data-image-height="768">
+                        <img src="main/images/image2.png" alt="" class="custom-expanded u-hover-feature u-image u-image-round u-radius u-image-4" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750" data-image-width="768" data-image-height="768">
                         <div class="u-align-left u-container-align-left u-container-style u-group u-white u-group-5" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="750">
                             <div class="u-container-layout u-container-layout-9">
                                 <h4 class="u-align-center-sm u-align-center-xs u-text u-text-5">Мужской стиль безграничен</h4>
